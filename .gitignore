@@ -15,3 +15,6 @@ typesense-server-data/
 .clwb/.bazelproject
 .vscode/settings.json
 /onnxruntime-prefix
+.tmp
+/composer.lock
+vendor
