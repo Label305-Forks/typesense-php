@@ -365,6 +365,14 @@ We strive to provide good support through our issue trackers on GitHub. However,
 
 We offer Paid Support options described [here](https://typesense.org/support/).
 
+## Compatibility
+
+| Typesense Server | typesense-ruby |
+|------------------|----------------|
+| \>= v0.15.0 | \>= v2.0.4 |
+| \>= v0.12.0 | \>= v2.0.0 |
+| <= v0.11 | <= v1.0.0 |
+
 ## Contributing
 
 We are a lean team on a mission to democratize search and we'll take all the help we can get! If you'd like to get involved, here's information on where we could use your help: [Contributing.md](https://github.com/typesense/typesense/blob/master/CONTRIBUTING.md)
