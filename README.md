@@ -146,7 +146,11 @@ Install the Python client for Typesense:
 pip install typesense
 ```
 
+<<<<<<< HEAD
 We can now initialize the client and create a `companies` collection:
+=======
+You can find some examples [here](https://github.com/typesense/typesense-php/blob/master/examples/collection_operations.php).
+>>>>>>> 83b921e2 (Tweaks and typo fixes)
 
 ```python
 import typesense
@@ -370,6 +374,7 @@ We offer Paid Support options described [here](https://typesense.org/support/).
 
 ## Contributing
 
+<<<<<<< HEAD
 We are a lean team on a mission to democratize search and we'll take all the help we can get! If you'd like to get involved, here's information on where we could use your help: [Contributing.md](https://github.com/typesense/typesense/blob/master/CONTRIBUTING.md)
 
 ## Getting Latest Updates
@@ -405,3 +410,13 @@ The first build will take some time since other third-party libraries are pulled
 
 ---
 &copy; 2016-present Typesense Inc.
+=======
+Bug reports and pull requests are welcome on GitHub at [https://github.com/typesense/typesense-php].
+
+## Credits
+
+This client was originally developed by [Abdullah Al-Faqeir](https://github.org/abdullahfaqeir) and was 
+[adopted](https://github.com/devloopsnet/typesense-php/issues/4) as the official PHP client library for Typesense in Oct 2020.
+
+Ongoing development and support is now provided by Typesense, in addition to our collaborators.
+>>>>>>> 83b921e2 (Tweaks and typo fixes)
