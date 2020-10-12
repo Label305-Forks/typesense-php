@@ -1,9 +1,4 @@
-<p align="center">
-  <a href="https://typesense.org"><img src="assets/typesense_logo.svg" alt="Typesense" width="298" /></a> 
-</p>
-<p align="center">
-  Typesense is a fast, typo-tolerant search engine for building delightful search experiences.
-</p>
+# Typesense PHP Client (work in progress)
 
 <p align="center">
   An Open Source Algolia Alternative & <br>
