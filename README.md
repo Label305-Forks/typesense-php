@@ -378,7 +378,7 @@ Here are some examples that walk you through how to use the client: [doc/example
 
 | Typesense Server | typesense-php |
 |------------------|----------------|
-| \>= v0.15.0 | \>= v3.0.0 |
+| \>= v0.15.0 | \>= v4.0.0 |
 
 ## Contributing
 
@@ -442,4 +442,7 @@ This client was originally developed by [Abdullah Al-Faqeir](https://github.org/
 [adopted](https://github.com/devloopsnet/typesense-php/issues/4) as the official PHP client library for Typesense in Oct 2020.
 
 Ongoing development and support is now provided by Typesense, in addition to our collaborators.
+<<<<<<< HEAD
 >>>>>>> 83b921e2 (Tweaks and typo fixes)
+=======
+>>>>>>> 12404699 (Update README.md)
