@@ -1,9 +1,13 @@
-# Typesense PHP Client (work in progress)
+# Typesense PHP Client
 
+<<<<<<< HEAD
 <p align="center">
   An Open Source Algolia Alternative & <br>
   An Easier-to-Use ElasticSearch Alternative
 </p>
+=======
+Official PHP client for the Typesense API: https://github.com/typesense/typesense
+>>>>>>> b212dd6b (Update Readme)
 
 <p align="center">
  <!-- <a href="https://circleci.com/gh/typesense/typesense"><img src="https://circleci.com/gh/typesense/typesense.svg?style=shield&circle-token=1addd775339738a3d90869ddd8201110d561feaa"></a> -->
@@ -146,6 +150,7 @@ Install the Python client for Typesense:
 pip install typesense
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 We can now initialize the client and create a `companies` collection:
 =======
@@ -363,6 +368,11 @@ We strive to provide good support through our issue trackers on GitHub. However,
 - Prioritized feature requests
 
 We offer Paid Support options described [here](https://typesense.org/support/).
+=======
+Read the documentation here: [https://typesense.org/api/](https://typesense.org/api/)
+
+Here are some examples that walk you through how to use the client: [doc/examples](examples)
+>>>>>>> b212dd6b (Update Readme)
 
 ## Compatibility
 
@@ -429,7 +439,8 @@ composer run-script typesenseServer
 
 ## Credits
 
-This client was originally developed by [Abdullah Al-Faqeir](https://github.org/abdullahfaqeir) and was 
+This client was originally developed by [Abdullah Al-Faqeir](https://github.org/abdullahfaqeir) from 
+[DevLoops](https://github.com/devloopsnet) and was 
 [adopted](https://github.com/devloopsnet/typesense-php/issues/4) as the official PHP client library for Typesense in Oct 2020.
 
 Ongoing development and support is now provided by Typesense, in addition to our collaborators.
