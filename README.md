@@ -139,16 +139,26 @@ Here's a quick example showcasing how you can create a collection, index a docum
 Let's begin by starting the Typesense server via Docker:
 
 ```
+<<<<<<< HEAD
 docker run -p 8108:8108 -v/tmp/data:/data typesense/typesense:26.0 --data-dir /data --api-key=Hu52dwsas2AdxdE
+=======
+$ composer require php-http/curl-client typesense/typesense-php
+>>>>>>> 69c62ee7 (Update README.md)
 ```
 
 We have [API Clients](#api-clients) in a couple of languages, but let's use the Python client for this example.
 
+<<<<<<< HEAD
 Install the Python client for Typesense:
  
 ```
 pip install typesense
 ```
+=======
+Typesense uses [HTTPlug](http://httplug.io/) as an abstraction layer for an HTTP client. You'll find the List of supported HTTP clients & adapters [here](http://docs.php-http.org/en/latest/clients.html). Please be sure to install a supported client.
+
+## Usage
+>>>>>>> 69c62ee7 (Update README.md)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -373,8 +383,6 @@ Read the documentation here: [https://typesense.org/api/](https://typesense.org/
 
 Here are some examples that walk you through how to use the client: [doc/examples](examples)
 >>>>>>> b212dd6b (Update Readme)
-
-Typesense uses [HTTPlug](http://httplug.io/) as an abstraction layer for an HTTP client. You'll find the List of supported HTTP clients & adapters [here](http://docs.php-http.org/en/latest/clients.html). Please be sure to install a supported client.
 
 ## Compatibility
 
