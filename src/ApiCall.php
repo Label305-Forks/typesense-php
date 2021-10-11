@@ -44,12 +44,12 @@ class ApiCall
     /**
      * @var array|Node[]
      */
-    private static array $nodes;
+    private array $nodes;
 
     /**
      * @var Node|null
      */
-    private static ?Node $nearestNode;
+    private ?Node $nearestNode;
 
     /**
      * @var int
@@ -71,8 +71,8 @@ class ApiCall
         $this->config        = $config;
         $this->logger        = $config->getLogger();
         $this->client        = $config->getClient();
-        static::$nodes       = $this->config->getNodes();
-        static::$nearestNode = $this->config->getNearestNode();
+        $this->nodes       = $this->config->getNodes();
+        $this->nearestNode = $this->config->getNearestNode();
         $this->nodeIndex     = 0;
         $this->initializeNodes();
     }
@@ -82,11 +82,11 @@ class ApiCall
      */
     private function initializeNodes(): void
     {
-        if (static::$nearestNode !== null) {
-            $this->setNodeHealthCheck(static::$nearestNode, true);
+        if ($this->nearestNode !== null) {
+            $this->setNodeHealthCheck($this->nearestNode, true);
         }
 
-        foreach (static::$nodes as &$node) {
+        foreach ($this->nodes as &$node) {
             $this->setNodeHealthCheck($node, true);
         }
     }
@@ -307,16 +307,16 @@ class ApiCall
      */
     public function getNode(): Lib\Node
     {
-        if (static::$nearestNode !== null) {
-            if (static::$nearestNode->isHealthy() || $this->nodeDueForHealthCheck(static::$nearestNode)) {
-                return static::$nearestNode;
+        if ($this->nearestNode !== null) {
+            if ($this->nearestNode->isHealthy() || $this->nodeDueForHealthCheck($this->nearestNode)) {
+                return $this->nearestNode;
             }
         }
         $i = 0;
-        while ($i < count(static::$nodes)) {
+        while ($i < count($this->nodes)) {
             $i++;
-            $node            = static::$nodes[$this->nodeIndex];
-            $this->nodeIndex = ($this->nodeIndex + 1) % count(static::$nodes);
+            $node            = $this->nodes[$this->nodeIndex];
+            $this->nodeIndex = ($this->nodeIndex + 1) % count($this->nodes);
             if ($node->isHealthy() || $this->nodeDueForHealthCheck($node)) {
                 return $node;
             }
@@ -326,7 +326,7 @@ class ApiCall
          * None of the nodes are marked healthy, but some of them could have become healthy since last health check.
          * So we will just return the next node.
          */
-        return static::$nodes[$this->nodeIndex];
+        return $this->nodes[$this->nodeIndex];
     }
 
     /**
